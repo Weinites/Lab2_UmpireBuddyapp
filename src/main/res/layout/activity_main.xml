@@ -1,0 +1,77 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harsh.umpirebuddy.MainActivity">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:text="@string/strike"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="42dp"
+        android:id="@+id/tvStrike"
+        android:textSize="20dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:id="@+id/tvBall"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:text="@string/ball"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvStrike"
+        android:layout_alignLeft="@+id/tvStrike"
+        android:layout_alignStart="@+id/tvStrike" />
+
+    <TextView
+        android:id="@+id/tvStrikeCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignBaseline="@+id/tvStrike"
+        android:layout_alignBottom="@+id/tvStrike"
+        android:layout_alignLeft="@+id/tvBallCnt"
+        android:layout_alignStart="@+id/tvBallCnt"
+        android:text="1"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/tvBallCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/tvBall"
+        android:layout_alignBottom="@+id/tvBall"
+        android:layout_toEndOf="@+id/tvBall"
+        android:layout_toRightOf="@+id/tvBall"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btnStrike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/strike"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/tvBall"
+        android:layout_alignLeft="@+id/tvBall"
+        android:layout_alignStart="@+id/tvBall" />
+
+    <Button
+        android:id="@+id/btnBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ball"
+        android:layout_alignLeft="@+id/btnStrike"
+        android:layout_alignStart="@+id/btnStrike"
+        android:layout_below="@+id/btnStrike" />
+
+</RelativeLayout>
